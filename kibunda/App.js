@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <HomeScreen/>
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor='#5B3DA1'/>
     </View>
   );
 }
