@@ -65,27 +65,27 @@ const HomeScreen = () => {
 
             <View style={{backgroundColor: "#f4f4f4"}}>
                 <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={play} style={{width: 50, height: 50, resizeMode: "contain"}}/>
+                    <Image source={play} style={{width: 50, height: 50, resizeMode: "contain", marginRight: 10}}/>
                     <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>PLAY & EARN</Text> 
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={free} style={{width: 50, height: 50, resizeMode: "contain"}}/>
+                    <Image source={free} style={{width: 50, height: 50, resizeMode: "contain", marginRight: 10}}/>
                     <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>FREE INTERNET FILES</Text> 
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={short} style={{width: 50, height: 50, resizeMode: "contain"}}/>
+                    <Image source={short} style={{width: 50, height: 50, resizeMode: "contain", marginRight: 10}}/>
                     <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>SHORT LINKS</Text> 
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={watch} style={{width: 50, height: 50, resizeMode: "contain"}}/>
+                    <Image source={watch} style={{width: 50, height: 50, resizeMode: "contain", marginRight: 10}}/>
                     <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>WATCH & EARN</Text> 
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={refer} style={{width: 50, height: 50, resizeMode: "contain"}}/>
+                    <Image source={refer} style={{width: 50, height: 50, resizeMode: "contain", marginRight: 10}}/>
                     <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>REFER A FRIEND</Text> 
                 </TouchableOpacity>
 
