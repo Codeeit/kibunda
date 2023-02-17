@@ -6,24 +6,21 @@ import {
     StyleSheet,
     SafeAreaView,
     Image,
+    Button,
     ScrollView
 } from 'react-native'
 
 import banner from '../assets/banner.png'
-import free from '../assets/categories/free.jpeg'
-import ads from '../assets/categories/ads.jpeg'
-import play from '../assets/categories/play.png'
-import watch from '../assets/categories/watch.png'
-import short from '../assets/categories/short.png'
-
-import refer from '../assets/categories/refer.jpeg'
+import tigo from '../assets/tigologo.png'
+import airtel from '../assets/airtel.png'
+import halotel from '../assets/halotel.png'
 
 import { StatusBar } from 'expo-status-bar'
 import { MaterialIcons } from '@expo/vector-icons'
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 
-const HomeScreen = () => {
+const FreeNetScreen = () => {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.header}>
@@ -64,39 +61,63 @@ const HomeScreen = () => {
             </View>
 
             <View style={{backgroundColor: "#f4f4f4"}}>
-                <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={play} style={{width: 50, height: 50, resizeMode: "contain"}}/>
-                    <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>PLAY & EARN</Text> 
+                <TouchableOpacity style={{
+                    padding: 20, 
+                    backgroundColor: "white", 
+                    flexDirection: "row", 
+                    justifyContent: "space-between", 
+                    alignItems: "center",
+                    margin: 10,
+                    borderRadius: 5
+                }}>
+                    <Image source={tigo} style={{width: 50, height: 50, resizeMode: "contain"}}/>
+                    <Text>Tigo Tanzania</Text>
+                    <TouchableOpacity style={{backgroundColor: "#5B3DA1", paddingVertical: 10, paddingHorizontal: 10, borderRadius: 5}}>
+                    <Text style={{color: "white", fontWeight: 'bold'}}>GET FILES</Text>
+                    </TouchableOpacity>
+                    
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={free} style={{width: 50, height: 50, resizeMode: "contain"}}/>
-                    <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>FREE INTERNET FILES</Text> 
+                <TouchableOpacity style={{
+                    padding: 20, 
+                    backgroundColor: "white", 
+                    flexDirection: "row", 
+                    justifyContent: "space-between", 
+                    alignItems: "center",
+                    margin: 10,
+                    borderRadius: 5
+                }}>
+                    <Image source={airtel} style={{width: 50, height: 50, resizeMode: "contain"}}/>
+                    <Text>Airtel Tanzania</Text>
+                    <TouchableOpacity style={{backgroundColor: "#5B3DA1", paddingVertical: 10, paddingHorizontal: 10, borderRadius: 5}}>
+                    <Text style={{color: "white", fontWeight: 'bold'}}>GET FILES</Text>
+                    </TouchableOpacity>
+                    
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={short} style={{width: 50, height: 50, resizeMode: "contain"}}/>
-                    <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>SHORT LINKS</Text> 
+                <TouchableOpacity style={{
+                    padding: 20, 
+                    backgroundColor: "white", 
+                    flexDirection: "row", 
+                    justifyContent: "space-between", 
+                    alignItems: "center",
+                    margin: 10,
+                    borderRadius: 5
+                }}>
+                    <Image source={halotel} style={{width: 50, height: 50, resizeMode: "contain"}}/>
+                    <Text>Halotel Tanzania</Text>
+                    <TouchableOpacity style={{backgroundColor: "#5B3DA1", paddingVertical: 10, paddingHorizontal: 10, borderRadius: 5}}>
+                    <Text style={{color: "white", fontWeight: 'bold'}}>GET FILES</Text>
+                    </TouchableOpacity>
+                    
                 </TouchableOpacity>
-
-                <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={watch} style={{width: 50, height: 50, resizeMode: "contain"}}/>
-                    <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>WATCH & EARN</Text> 
-                </TouchableOpacity>
-
-                <TouchableOpacity style={styles.categoryWrapper}>
-                    <Image source={refer} style={{width: 50, height: 50, resizeMode: "contain"}}/>
-                    <Text style={{color: "#5B3DA1", fontWeight: 'bold'}}>REFER A FRIEND</Text> 
-                </TouchableOpacity>
-
-                
             </View>
             </ScrollView>
         </SafeAreaView>
     )
 }
 
-export default HomeScreen
+export default FreeNetScreen
 
 const styles = StyleSheet.create({
     container: {
@@ -127,13 +148,4 @@ const styles = StyleSheet.create({
         color: "white",
         paddingHorizontal: 10
     },
-    categoryWrapper: {
-        padding: 20, 
-        backgroundColor: "white", 
-        flexDirection: "row", 
-        justifyContent: "flex-start", 
-        alignItems: "center",
-        margin: 10,
-        borderRadius: 5
-}
 })

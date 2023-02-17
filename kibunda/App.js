@@ -1,6 +1,11 @@
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
-import HomeScreen from './screens/HomeScreen';
+
+
+import HomeScreen from './screens/HomeScreen'
+import SignInScreen from './screens/auth/SignInScreen'
+import SignUpScreen from './screens/auth/SignUpScreen'
+import FreeNetScreen from './screens/FreeNetScreen'
 
 
 export default function App() {
@@ -9,7 +14,7 @@ export default function App() {
       <HomeScreen/>
       <StatusBar style="light" backgroundColor='#5B3DA1'/>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -19,4 +24,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
