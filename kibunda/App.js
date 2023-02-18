@@ -6,6 +6,8 @@ import HomeScreen from './screens/HomeScreen'
 import SignInScreen from './screens/auth/SignInScreen'
 import SignUpScreen from './screens/auth/SignUpScreen'
 import FreeNetScreen from './screens/FreeNetScreen'
+import PlayScreen from './screens/PlayScreen'
+import ShortLinksScreen from './screens/ShortLinksSreen'
 import PushNotifications from './notifications/PushNotifications'
 
 
