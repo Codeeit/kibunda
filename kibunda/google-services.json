@@ -1,0 +1,39 @@
+{
+    "project_info": {
+      "project_number": "597197548862",
+      "project_id": "codeeit-apps",
+      "storage_bucket": "codeeit-apps.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:597197548862:android:d39539f5dc1ffeb2df506f",
+          "android_client_info": {
+            "package_name": "com.codeeit.kibunda"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "597197548862-sp7n855amhoffaf7pbh8rvm29o2kiq21.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyCwBeIlVPB4R636lgmPshqQtgcUEwvEkU0"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "597197548862-sp7n855amhoffaf7pbh8rvm29o2kiq21.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
