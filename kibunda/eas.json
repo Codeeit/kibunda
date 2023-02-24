@@ -16,18 +16,10 @@
         "resourceClass": "m1-medium"
       }
     },
-    "preview2": {
+    "test-preview": {
       "android": {
         "buildType": "apk"
       }
-    },
-    "preview3": {
-      "android": {
-        "gradleCommand": ":app:assembleRelease"
-      }
-    },
-    "preview4": {
-      "developmentClient": true
     },
     "production": {
       "ios": {
