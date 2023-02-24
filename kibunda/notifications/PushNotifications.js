@@ -3,6 +3,7 @@ import { Text, View, Button, Platform } from 'react-native';
 import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 
+//Handling foreground notifictions
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,
@@ -11,8 +12,21 @@ Notifications.setNotificationHandler({
   }),
 });
 
-// Can use this function below OR use Expo's Push Notification Tool from: https://expo.dev/notifications
-async function sendPushNotification(expoPushToken) {
+//Handling triggered Notifications (backgrond)
+const triggerNotificationHandler = () => {
+  Notifications.scheduleNotificationAsync({
+    content: {
+      title: "Notification Title",
+      body: "notification Message Goes Here!"
+    }, 
+    trigger:{
+      seconds: 10
+    }
+  });
+  };
+
+
+  async function sendPushNotification(expoPushToken) {
   const message = {
     to: expoPushToken,
     sound: 'default',
@@ -63,7 +77,7 @@ async function registerForPushNotificationsAsync() {
   return token;
 }
 
-export default function App() {
+export default function PushNotifications() {
   const [expoPushToken, setExpoPushToken] = useState('');
   const [notification, setNotification] = useState(false);
   const notificationListener = useRef();
@@ -88,14 +102,8 @@ export default function App() {
 
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'space-around' }}>
-      <Text>Your expo push token: {expoPushToken}</Text>
-      <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Title: {notification && notification.request.content.title} </Text>
-        <Text>Body: {notification && notification.request.content.body}</Text>
-        <Text>Data: {notification && JSON.stringify(notification.request.content.data)}</Text>
-      </View>
       <Button
-        title="Press to Send Notification"
+        title="Send Test Notification"
         onPress={async () => {
           await sendPushNotification(expoPushToken);
         }}
