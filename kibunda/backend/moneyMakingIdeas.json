@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "title": "Freelance Web Development",
+      "description": "Offer your web development skills as a freelancer on platforms like Upwork, Freelancer, or Fiverr. Build websites or web applications for clients and earn money.",
+      "tips": "Create a portfolio website to showcase your skills, and promote your services on social media and online communities.",
+      "resources": "Upwork, Freelancer, Fiverr, GitHub, Codepen"
+    },
+    {
+      "id": 2,
+      "title": "Rent Out Your Property",
+      "description": "If you have a spare room or property, you can rent it out on platforms like Airbnb or VRBO. Earn money by hosting guests and providing a comfortable stay.",
+      "tips": "Ensure your property is clean, well-maintained, and offers desirable amenities to attract guests. Provide excellent customer service to receive positive reviews and increase bookings.",
+      "resources": "Airbnb, VRBO"
+    },
+    {
+      "id": 3,
+      "title": "Start a Blog",
+      "description": "Create a blog on a topic you're passionate about and monetize it through ads, sponsored content, or affiliate marketing. Share your knowledge, experiences, and insights with your audience.",
+      "tips": "Focus on creating high-quality, valuable content that resonates with your target audience. Promote your blog on social media, engage with your readers, and optimize your site for search engines.",
+      "resources": "WordPress, Blogger, Google AdSense, Amazon Associates"
+    },
+    {
+      "id": 4,
+      "title": "Sell Handmade Products",
+      "description": "If you're skilled at crafting, you can create handmade products like jewelry, home decor, or clothing, and sell them online on platforms like Etsy or Handmade at Amazon.",
+      "tips": "Create unique and high-quality products that stand out from the competition. Use high-resolution images and compelling product descriptions to attract customers. Promote your products on social media and participate in craft fairs or local markets.",
+      "resources": "Etsy, Handmade at Amazon"
+    },
+    {
+      "id": 5,
+      "title": "Become a Virtual Assistant",
+      "description": "Offer administrative or specialized support services remotely as a virtual assistant. Help busy entrepreneurs, professionals, or small businesses with tasks like scheduling, email management, research, and more.",
+      "tips": "Identify your specific skills and market yourself to a target audience. Create a professional website or profile to showcase your services and skills. Build relationships with clients and provide excellent customer service.",
+      "resources": "Upwork, Freelancer, Fiverr"
+    },
+    {
+      "id": 6,
+      "title": "Create and Sell Online Courses",
+      "description": "If you're knowledgeable in a specific field, you can create and sell online courses on platforms like Udemy, Teachable, or Coursera. Share your expertise and teach others valuable skills.",
+      "tips": "Research popular topics and niches, and create high-quality courses that offer value to students. Promote your courses through your own website, social media, or email marketing. Keep your courses updated and engage with your students.",
+      "resources": "Udemy, Teachable, Coursera"
+    },
+    {
+      "id": 7,
+      "title": "Offer Freelance Writing Services",
+      "description": "If you have strong writing skills, you can offer freelance writing services on platforms like Upwork, Freelancer, or Fiverr. Write articles, blog posts, copywriting, or other types of content for clients and earn money based on your writing skills and expertise.",
+      "tips": "Build a portfolio of your writing samples to showcase your skills to potential clients. Niche down your writing services to cater to specific industries or niches. Network with other writers or clients to find more opportunities.",
+      "resources": "Upwork, Freelancer, Fiverr, ProBlogger"
+      },
+      {
+      "id": 8,
+      "title": "Offer Social Media Management Services",
+      "description": "If you're skilled at managing social media accounts, you can offer social media management services to businesses or individuals. Help clients grow their social media presence and engagement and earn money.",
+      "tips": "Create a portfolio of your social media management work and results to showcase your expertise. Stay updated with the latest social media trends and tools. Offer personalized strategies and plans for each client based on their goals and target audience.",
+      "resources": "Upwork, Freelancer, Fiverr, Hootsuite, Buffer"
+      },
+      {
+      "id": 9,
+      "title": "Become a Graphic Designer",
+      "description": "If you have a flair for design, you can offer graphic design services to businesses or individuals. Create logos, banners, social media posts, or other visual content and earn money based on your design skills.",
+      "tips": "Build a portfolio of your graphic design work to showcase your skills and style. Stay updated with the latest design trends and tools. Offer personalized design solutions for each client based on their branding and marketing needs.",
+      "resources": "Upwork, Freelancer, Fiverr, Adobe Creative Cloud, Canva"
+      },
+      {
+      "id": 10,
+      "title": "Start a YouTube Channel",
+      "description": "If you're passionate about creating videos, you can start a YouTube channel and monetize it through ads, sponsorships, or merchandise sales. Share your content, stories, or talents with the world.",
+      "tips": "Identify a niche or topic for your YouTube channel, and create high-quality videos that resonate with your target audience. Optimize your videos with appropriate tags, titles, and descriptions. Promote your channel on social media and engage with your viewers.",
+      "resources": "YouTube, Google AdSense, Patreon"
+      }
+    ]
+  

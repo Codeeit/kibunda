@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
@@ -10,12 +11,33 @@ import PlayScreen from './screens/PlayScreen'
 import ShortLinksScreen from './screens/ShortLinksSreen'
 import PushNotifications from './notifications/PushNotifications'
 
+import MoneyMakingIdeasList from './MoneyMakingIdeasList'
+import MoneyMakingIdeaDetail from './MoneyMakingIdeaDetail'
 
-export default function App() {
+const App = () => {
+  const [ideas, setIdeas] = useState([]);
+  const [selectedIdea, setSelectedIdea] = useState(null)
+
+  // Fetch data from JSON file on component mount
+  useEffect(() => {
+    fetch('moneyMakingIdeas.json')
+      .then(response => response.json())
+      .then(data => setIdeas(data))
+      .catch(error => console.error('Error fetching data:', error))
+  }, [])
+
+  // Handle click on an idea item
+  const handlePressItem = (idea) => {
+    setSelectedIdea(idea);
+  }
+
   return (
     <View style={styles.container}>
-      <PushNotifications/>
-      <StatusBar style="light" backgroundColor='#5B3DA1'/>
+      {!selectedIdea ? (
+        <MoneyMakingIdeasList ideas={ideas} onPressItem={handlePressItem} />
+      ) : (
+        <MoneyMakingIdeaDetail idea={selectedIdea} />
+      )}
     </View>
   )
 }
@@ -28,3 +50,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 })
+
